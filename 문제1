@@ -1,0 +1,68 @@
+
+/* 문제1
+#include <stdio.h>
+#include <string.h>
+
+void sp(char arr[]){
+  int l = strlen(arr);
+  char tmp[20] = {0};
+  for(int i=0;i<l;i++)
+      tmp[i] = arr[l-i-1];
+  for(int i=0;i<l;i++)
+    arr[i] = tmp[i];
+}
+
+int main(){
+  char arr[20]={0};
+  scanf("%s", arr);
+  sp(arr);
+  printf("%s", arr);
+
+  return 0;
+}
+*/
+
+/* 문제2
+#include <stdio.h>
+#include <string.h>
+
+void sp(char s1[], char s2[]){
+  char tmp[100]={0};
+  int l = strlen(s1);
+  for(int i=0;i<l;i++){
+    tmp[i] = s1[i];
+    s1[i] = s2[i];
+    s2[i] = tmp[i];
+  }
+  printf("%s\n%s", s1, s2);
+}
+
+int main(){
+  char arr[100],str[100];
+  scanf("%s", arr);
+  scanf("%s", str);
+  sp(arr,str);
+
+  return 0;
+}
+*/
+/*문제3
+#include <stdio.h>
+#include <string.h>
+void sm(char s1[], char s2[]){
+  int l = strlen(s1);
+  for(int i=0;i<l;i++)
+    if(s1[i]==s2[i])
+      printf("same letter:%c, pos: %d\n", s1[i],i);
+}
+
+int main(){
+  char arr[21],str[21];
+  scanf("%s", arr);
+  scanf("%s", str);
+  sm(arr,str);
+
+  return 0;
+}
+
+*/
