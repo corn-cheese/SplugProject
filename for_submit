@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+//No1
+int main()
+{       
+        char a[20];
+        char b[20];
+        int c,j=0;
+        scanf("%s",a);
+        getchar();
+        c=strlen(a);
+        /*for(int i=c-1;i<0;i--){
+                b[j]=a[i];
+                j++;
+        }*/
+        b[0]=a[c-1];
+        b[1]=a[3];
+        b[2]=a[2];
+        b[3]=a[1];
+        b[c-1]=a[0];
+        printf("%s",b);
+        return 0;
+}
+//No2
+/*int main()
+{
+        char a[20];
+        char b[20];
+        char c[20];
+        int q;
+        printf("a : ");
+        scanf("%s",a);
+        printf("b : ");
+        scanf("%s",b);
+        q=strlen(a);
+        for(int i=0;i<q;i++){
+                c[i]=a[i];
+        }
+        for(int j=0;j<q;j++){
+                a[j]=b[j];
+        }
+        for(int k=0;k<q;k++){
+                b[k]=c[k];
+        }
+        printf("a : %s\n",a);
+        printf("b : %s\n",b);
+        return 0;
+}
+*/
+//No3
+/*int main()
+{
+        printf("문자의 최대 길이는 20입니다.\n");
+        char a[21];
+        char b[21];
+        int c;
+        int count=0;
+        scanf("%s",a);
+        scanf("%s",b);
+        c=strlen(a);
+        for(int i=0;i<c;i++){
+                if(a[i]==b[i]){
+                        printf("같은 글자: %c, 위치: %d\n",b[i],count);
+                }
+                count++;
+        }
+        return 0;
+}
+*/
